@@ -1,3 +1,7 @@
 <resources>
+
     <string name="app_name">gsmeac-android</string>
+    <string name="action_dismiss">Dismiss</string>
+    <string name="title_oops">Oops</string>
+
 </resources>
