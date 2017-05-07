@@ -22,14 +22,27 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <LinearLayout
+    <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <!-- Content -->
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
 
-    </LinearLayout>
+        <android.support.design.widget.FloatingActionButton
+                android:id="@+id/floatingactionbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="16dp"
+                android:src="@drawable/ic_plus_white_24dp"
+                app:layout_anchor="@id/recyclerview"
+                app:layout_anchorGravity="bottom|right|end"
+                app:layout_behavior="com.liamcottle.gsmeac.ui.ScrollAwareFABBehavior"/>
+
+    </FrameLayout>
 
 </android.support.design.widget.CoordinatorLayout>
