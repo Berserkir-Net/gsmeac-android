@@ -7,7 +7,8 @@
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name"
             android:supportsRtl="true"
-            android:theme="@style/GSMEAC">
+            android:theme="@style/GSMEAC"
+            android:name=".GSMEACApplication">
 
         <activity android:name=".activity.MainActivity">
             <intent-filter>
@@ -16,7 +17,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activity.NewBriefActivity" android:label="@string/activity_new_brief"/>
+        <activity android:name=".activity.BriefEditorActivity" android:label="@string/activity_new_brief"/>
 
     </application>
 

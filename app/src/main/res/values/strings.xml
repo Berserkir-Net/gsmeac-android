@@ -6,7 +6,74 @@
 
     <string name="action_dismiss">Dismiss</string>
     <string name="action_save">Save</string>
+    <string name="action_exit">Exit</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_delete">Delete</string>
 
     <string name="title_oops">Oops</string>
+    <string name="title_confirm">Confirm</string>
+
+    <string name="info_failed_to_save_brief">Failed to Save Brief</string>
+    <string name="info_failed_to_delete_brief">Failed to Delete Brief</string>
+    <string name="info_brief_saved">Brief Saved</string>
+    <string name="info_brief_deleted">Brief Deleted</string>
+    <string name="info_no_name">No Name</string>
+    <string name="info_tap_to_create_new_brief">Tap the + button to create a new Brief</string>
+    <string name="info_last_updated">Last Updated: %1$s</string>
+    <string name="info_exit_unsaved_changed">Are you sure you want to exit? You haven\'t saved your changes.</string>
+    <string name="info_delete_brief">Are you sure you want to delete this Brief?</string>
+
+    <string name="gsmeac_name">Name</string>
+    <string name="gsmeac_name_hint">A Name for this Brief.</string>
+
+    <string name="gsmeac_ground">Ground</string>
+    <string name="gsmeac_ground_hint">Define the area in which the task will be undertaken, including any hazards and restricting factors.</string>
+
+    <string name="gsmeac_situation">Situation</string>
+    <string name="gsmeac_situation_hint">A general background of the task and the time the task needs to be completed by.</string>
+
+    <string name="gsmeac_mission">Mission</string>
+    <string name="gsmeac_mission_hint">A short concise statement detailing the task, who is to complete it and when it needs to be completed by. (When giving orders this is stated twice).</string>
+
+    <string name="gsmeac_execution">Execution</string>
+    <string name="gsmeac_execution_hint"><![CDATA[How the task is going to be completed. This can include, but is not limited to:
+        <br/><br/><b>General Outline:</b><br/>
+        <ul>
+        <li>A word picture i.e. this task will be conducted in three stages.</li>
+        <li>Move to the task site, the completion of the task and the move back to the base location.</li>
+        </ul>
+        <b>Detailed Tasks:</b><br/>
+        <ul>
+        <li>Any specific tasks allocated to groups or sub groups for each stage.</li>
+        </ul>
+        <b>Coordinating Instructions:</b><br/>
+        <ul>
+        <li>Timings critical to the tasks.</li>
+        <li>Limitations and restrictions.</li>
+        </ul>
+        <b>Actions On:</b><br/>
+        <ul>
+        <li>What to do if lost, injured etc.</li>
+        <li>Safety.</li>
+        </ul>]]></string>
+
+    <string name="gsmeac_administration_and_logistics">Administration and Logistics</string>
+    <string name="gsmeac_administration_and_logistics_hint"><![CDATA[Additional factors that may impact the task. This can include, but is not limited to:
+        <ul>
+        <li>Administration and Logistics in support of the completion of the task.</li>
+        <li>Meal timings and location.</li>
+        <li>Rest periods.</li>
+        <li>Accommodation.</li>
+        <li>Equipment.</li>
+        <li>Dress.</li>
+        <li>Medical.</li>
+        </ul>]]></string>
+
+    <string name="gsmeac_command_and_signals">Command and Signals</string>
+    <string name="gsmeac_command_and_signals_hint"><![CDATA[Who will be talking to who and how this will be done. This can include, but is not limited to:
+        <ul>
+        <li>Command channels.</li>
+        <li>Communication channels.</li>
+        </ul>]]></string>
 
 </resources>

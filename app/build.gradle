@@ -20,8 +20,18 @@ android {
 }
 
 dependencies {
+
     compile fileTree(dir: 'libs', include: ['*.jar'])
+
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support:design:25.3.1'
     compile 'com.afollestad.material-dialogs:core:0.8.5.9'
+
+    compile 'com.yahoo.squidb:squidb:3.2.3'
+    compile 'com.yahoo.squidb:squidb-annotations:3.2.3'
+    compile 'com.yahoo.squidb:squidb-android:3.2.3'
+    annotationProcessor 'com.yahoo.squidb:squidb-processor:3.2.3'
+
+    compile 'org.apache.commons:commons-lang3:3.5'
+
 }
