@@ -18,6 +18,7 @@
         </activity>
 
         <activity android:name=".activity.BriefEditorActivity" android:label="@string/activity_new_brief"/>
+        <activity android:name=".activity.BriefViewerActivity" android:label="@string/activity_brief_viewer"/>
 
     </application>
 

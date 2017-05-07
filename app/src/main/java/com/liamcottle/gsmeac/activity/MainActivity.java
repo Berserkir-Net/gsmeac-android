@@ -78,8 +78,8 @@ public class MainActivity extends GSMEACActivity {
 
             @Override
             public void onBriefClick(Brief brief) {
-                // launch brief editor
-                startActivity(BriefEditorActivity.intentForBriefId(mContext, brief.getId()));
+                // launch brief viewer
+                startActivity(BriefViewerActivity.intentForBriefId(mContext, brief.getId()));
             }
 
             @Override
