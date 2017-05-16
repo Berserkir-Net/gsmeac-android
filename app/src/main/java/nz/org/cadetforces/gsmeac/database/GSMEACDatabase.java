@@ -1,6 +1,6 @@
-package com.liamcottle.gsmeac.database;
+package nz.org.cadetforces.gsmeac.database;
 
-import com.liamcottle.gsmeac.database.model.Brief;
+import nz.org.cadetforces.gsmeac.database.model.Brief;
 import com.yahoo.squidb.data.ISQLiteDatabase;
 import com.yahoo.squidb.data.ISQLiteOpenHelper;
 import com.yahoo.squidb.data.SquidDatabase;

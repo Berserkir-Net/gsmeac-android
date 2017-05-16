@@ -1,4 +1,4 @@
-package com.liamcottle.gsmeac.database.model;
+package nz.org.cadetforces.gsmeac.database.model;
 
 import com.yahoo.squidb.annotations.ColumnSpec;
 import com.yahoo.squidb.annotations.PrimaryKey;

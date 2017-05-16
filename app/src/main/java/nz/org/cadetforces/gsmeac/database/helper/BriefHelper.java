@@ -1,7 +1,7 @@
-package com.liamcottle.gsmeac.database.helper;
+package nz.org.cadetforces.gsmeac.database.helper;
 
-import com.liamcottle.gsmeac.database.GSMEACDatabase;
-import com.liamcottle.gsmeac.database.model.Brief;
+import nz.org.cadetforces.gsmeac.database.GSMEACDatabase;
+import nz.org.cadetforces.gsmeac.database.model.Brief;
 import com.yahoo.squidb.data.SquidCursor;
 import com.yahoo.squidb.data.TableModel;
 import com.yahoo.squidb.sql.Query;

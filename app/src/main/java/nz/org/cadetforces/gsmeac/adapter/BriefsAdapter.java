@@ -1,4 +1,4 @@
-package com.liamcottle.gsmeac.adapter;
+package nz.org.cadetforces.gsmeac.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -8,9 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import com.liamcottle.gsmeac.R;
-import com.liamcottle.gsmeac.adapter.base.BaseRecyclerViewAdapter;
-import com.liamcottle.gsmeac.database.model.Brief;
+import nz.org.cadetforces.gsmeac.R;
+import nz.org.cadetforces.gsmeac.adapter.base.BaseRecyclerViewAdapter;
+import nz.org.cadetforces.gsmeac.database.model.Brief;
 
 public class BriefsAdapter extends BaseRecyclerViewAdapter {
 

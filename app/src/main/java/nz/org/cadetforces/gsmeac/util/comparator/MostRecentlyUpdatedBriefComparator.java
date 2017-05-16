@@ -1,6 +1,6 @@
-package com.liamcottle.gsmeac.util.comparator;
+package nz.org.cadetforces.gsmeac.util.comparator;
 
-import com.liamcottle.gsmeac.database.model.Brief;
+import nz.org.cadetforces.gsmeac.database.model.Brief;
 import org.apache.commons.lang3.builder.CompareToBuilder;
 
 import java.util.Comparator;

@@ -1,4 +1,4 @@
-package com.liamcottle.gsmeac.adapter.base;
+package nz.org.cadetforces.gsmeac.adapter.base;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
