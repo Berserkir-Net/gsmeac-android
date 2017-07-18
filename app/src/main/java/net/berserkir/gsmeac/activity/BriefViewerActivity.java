@@ -23,6 +23,7 @@ public class BriefViewerActivity extends GSMEACActivity {
     private TextView mGroundEditText;
     private TextView mSituationEditText;
     private TextView mMissionEditText;
+    private TextView mMissionRepeatedEditText;
     private TextView mExecutionEditText;
     private TextView mAdministrationAndLogisticsEditText;
     private TextView mCommandAndSignalsEditText;
@@ -60,6 +61,7 @@ public class BriefViewerActivity extends GSMEACActivity {
         mGroundEditText = (TextView) findViewById(R.id.groundTextView);
         mSituationEditText = (TextView) findViewById(R.id.situationTextView);
         mMissionEditText = (TextView) findViewById(R.id.missionTextView);
+        mMissionRepeatedEditText = (TextView) findViewById(R.id.missionRepeatedTextView);
         mExecutionEditText = (TextView) findViewById(R.id.executionTextView);
         mAdministrationAndLogisticsEditText = (TextView) findViewById(R.id.administrationAndLogisticsTextView);
         mCommandAndSignalsEditText = (TextView) findViewById(R.id.commandAndSignalsTextView);
@@ -85,6 +87,7 @@ public class BriefViewerActivity extends GSMEACActivity {
             mGroundEditText.setText(brief.getGround());
             mSituationEditText.setText(brief.getSituation());
             mMissionEditText.setText(brief.getMission());
+            mMissionRepeatedEditText.setText(mContext.getString(R.string.gsmeac_mission_i_say_again, brief.getMission()));
             mExecutionEditText.setText(brief.getExecution());
             mAdministrationAndLogisticsEditText.setText(brief.getAdministrationAndLogistics());
             mCommandAndSignalsEditText.setText(brief.getCommandAndSignals());
