@@ -72,7 +72,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/textBlack"
-                        android:inputType="textCapSentences"/>
+                        android:inputType="textCapSentences|textMultiLine"/>
 
             </LinearLayout>
 
@@ -111,7 +111,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/textBlack"
-                        android:inputType="textCapSentences"/>
+                        android:inputType="textCapSentences|textMultiLine"/>
 
             </LinearLayout>
 
@@ -150,7 +150,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/textBlack"
-                        android:inputType="textCapSentences"/>
+                        android:inputType="textCapSentences|textMultiLine"/>
 
             </LinearLayout>
 
@@ -189,7 +189,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/textBlack"
-                        android:inputType="textCapSentences"/>
+                        android:inputType="textCapSentences|textMultiLine"/>
 
             </LinearLayout>
 
@@ -228,7 +228,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/textBlack"
-                        android:inputType="textCapSentences"/>
+                        android:inputType="textCapSentences|textMultiLine"/>
 
             </LinearLayout>
 
@@ -267,7 +267,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/textBlack"
-                        android:inputType="textCapSentences"/>
+                        android:inputType="textCapSentences|textMultiLine"/>
 
             </LinearLayout>
 
@@ -306,7 +306,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/textBlack"
-                        android:inputType="textCapSentences"/>
+                        android:inputType="textCapSentences|textMultiLine"/>
 
             </LinearLayout>
 
