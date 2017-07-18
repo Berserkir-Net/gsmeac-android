@@ -35,7 +35,7 @@
     <string name="gsmeac_situation_hint">A general background of the task and the time the task needs to be completed by.</string>
 
     <string name="gsmeac_mission">Mission</string>
-    <string name="gsmeac_mission_i_say_again">I say again, %s</string>
+    <string name="gsmeac_mission_i_say_again">I say again,\n%s</string>
     <string name="gsmeac_mission_hint">A short concise statement detailing the task, who is to complete it and when it needs to be completed by. (When giving orders this is stated twice).</string>
 
     <string name="gsmeac_execution">Execution</string>

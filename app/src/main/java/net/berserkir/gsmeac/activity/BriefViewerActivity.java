@@ -4,11 +4,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
 import net.berserkir.gsmeac.R;
+import net.berserkir.gsmeac.adapter.BriefSectionAdapter;
 import net.berserkir.gsmeac.database.helper.BriefHelper;
 import net.berserkir.gsmeac.database.model.Brief;
 
@@ -19,14 +21,9 @@ public class BriefViewerActivity extends GSMEACActivity {
     private long mBriefId;
 
     private Toolbar mToolbar;
-    private TextView mNameEditText;
-    private TextView mGroundEditText;
-    private TextView mSituationEditText;
-    private TextView mMissionEditText;
-    private TextView mMissionRepeatedEditText;
-    private TextView mExecutionEditText;
-    private TextView mAdministrationAndLogisticsEditText;
-    private TextView mCommandAndSignalsEditText;
+    private RecyclerView mRecyclerView;
+
+    private BriefSectionAdapter mBriefSectionAdapter;
 
     public static Intent intentForBriefId(Context context, long briefId) {
         Intent intent = new Intent(context, BriefViewerActivity.class);
@@ -57,14 +54,12 @@ public class BriefViewerActivity extends GSMEACActivity {
 
         // get reference to views
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
-        mNameEditText = (TextView) findViewById(R.id.nameTextView);
-        mGroundEditText = (TextView) findViewById(R.id.groundTextView);
-        mSituationEditText = (TextView) findViewById(R.id.situationTextView);
-        mMissionEditText = (TextView) findViewById(R.id.missionTextView);
-        mMissionRepeatedEditText = (TextView) findViewById(R.id.missionRepeatedTextView);
-        mExecutionEditText = (TextView) findViewById(R.id.executionTextView);
-        mAdministrationAndLogisticsEditText = (TextView) findViewById(R.id.administrationAndLogisticsTextView);
-        mCommandAndSignalsEditText = (TextView) findViewById(R.id.commandAndSignalsTextView);
+        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerview);
+
+        // setup briefs adapter for recycler view
+        mBriefSectionAdapter = new BriefSectionAdapter(mContext);
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(mContext));
+        mRecyclerView.setAdapter(mBriefSectionAdapter);
 
         // set toolbar
         setSupportActionBar(mToolbar);
@@ -82,15 +77,57 @@ public class BriefViewerActivity extends GSMEACActivity {
 
     private void initFromBrief(Brief brief) {
         if (brief != null) {
+
             mBriefId = brief.getId();
-            mNameEditText.setText(brief.getName());
-            mGroundEditText.setText(brief.getGround());
-            mSituationEditText.setText(brief.getSituation());
-            mMissionEditText.setText(brief.getMission());
-            mMissionRepeatedEditText.setText(mContext.getString(R.string.gsmeac_mission_i_say_again, brief.getMission()));
-            mExecutionEditText.setText(brief.getExecution());
-            mAdministrationAndLogisticsEditText.setText(brief.getAdministrationAndLogistics());
-            mCommandAndSignalsEditText.setText(brief.getCommandAndSignals());
+
+            // clear previous items from adapter
+            mBriefSectionAdapter.clear();
+
+            // name
+            mBriefSectionAdapter.add(new BriefSectionAdapter.BriefSection(
+                    mContext.getString(R.string.gsmeac_name),
+                    brief.getName()
+            ));
+
+            // ground
+            mBriefSectionAdapter.add(new BriefSectionAdapter.BriefSection(
+                    mContext.getString(R.string.gsmeac_ground),
+                    brief.getGround()
+            ));
+
+            // situation
+            mBriefSectionAdapter.add(new BriefSectionAdapter.BriefSection(
+                    mContext.getString(R.string.gsmeac_situation),
+                    brief.getSituation()
+            ));
+
+            // mission (and mission repeated)
+            mBriefSectionAdapter.add(new BriefSectionAdapter.BriefSection(
+                    mContext.getString(R.string.gsmeac_mission),
+                    String.format("%s\n\n%s",
+                            brief.getMission(),
+                            mContext.getString(R.string.gsmeac_mission_i_say_again, brief.getMission())
+                    )
+            ));
+
+            // execution
+            mBriefSectionAdapter.add(new BriefSectionAdapter.BriefSection(
+                    mContext.getString(R.string.gsmeac_execution),
+                    brief.getExecution()
+            ));
+
+            // administration and logistics
+            mBriefSectionAdapter.add(new BriefSectionAdapter.BriefSection(
+                    mContext.getString(R.string.gsmeac_administration_and_logistics),
+                    brief.getAdministrationAndLogistics()
+            ));
+
+            // command and signals
+            mBriefSectionAdapter.add(new BriefSectionAdapter.BriefSection(
+                    mContext.getString(R.string.gsmeac_command_and_signals),
+                    brief.getCommandAndSignals()
+            ));
+
         }
     }
 
