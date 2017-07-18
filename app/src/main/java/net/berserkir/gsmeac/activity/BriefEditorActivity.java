@@ -237,6 +237,9 @@ public class BriefEditorActivity extends GSMEACActivity implements TextWatcher {
         // focus on coordinator layout so edit texts are no longer focused
         mCoordinatorLayout.requestFocus();
 
+        // finish editor activity after saving brief
+        finish();
+
     }
 
     @Override
