@@ -71,7 +71,8 @@
                         android:id="@+id/nameEditText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/textBlack"/>
+                        android:textColor="@color/textBlack"
+                        android:inputType="textCapSentences"/>
 
             </LinearLayout>
 
@@ -109,7 +110,8 @@
                         android:id="@+id/groundEditText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/textBlack"/>
+                        android:textColor="@color/textBlack"
+                        android:inputType="textCapSentences"/>
 
             </LinearLayout>
 
@@ -147,7 +149,8 @@
                         android:id="@+id/situationEditText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/textBlack"/>
+                        android:textColor="@color/textBlack"
+                        android:inputType="textCapSentences"/>
 
             </LinearLayout>
 
@@ -185,7 +188,8 @@
                         android:id="@+id/missionEditText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/textBlack"/>
+                        android:textColor="@color/textBlack"
+                        android:inputType="textCapSentences"/>
 
             </LinearLayout>
 
@@ -223,7 +227,8 @@
                         android:id="@+id/executionEditText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/textBlack"/>
+                        android:textColor="@color/textBlack"
+                        android:inputType="textCapSentences"/>
 
             </LinearLayout>
 
@@ -261,7 +266,8 @@
                         android:id="@+id/administrationAndLogisticsEditText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/textBlack"/>
+                        android:textColor="@color/textBlack"
+                        android:inputType="textCapSentences"/>
 
             </LinearLayout>
 
@@ -299,7 +305,8 @@
                         android:id="@+id/commandAndSignalsEditText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/textBlack"/>
+                        android:textColor="@color/textBlack"
+                        android:inputType="textCapSentences"/>
 
             </LinearLayout>
 
