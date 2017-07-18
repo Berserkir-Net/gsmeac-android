@@ -1,8 +1,8 @@
-package nz.org.cadetforces.gsmeac;
+package net.berserkir.gsmeac;
 
 import android.app.Application;
 import android.content.pm.PackageManager;
-import nz.org.cadetforces.gsmeac.database.OpenHelperCreator;
+import net.berserkir.gsmeac.database.OpenHelperCreator;
 import com.yahoo.squidb.android.AndroidOpenHelper;
 import com.yahoo.squidb.data.ISQLiteOpenHelper;
 import com.yahoo.squidb.data.SquidDatabase;

@@ -1,4 +1,4 @@
-package nz.org.cadetforces.gsmeac.activity;
+package net.berserkir.gsmeac.activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -8,9 +8,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
-import nz.org.cadetforces.gsmeac.R;
-import nz.org.cadetforces.gsmeac.database.helper.BriefHelper;
-import nz.org.cadetforces.gsmeac.database.model.Brief;
+import net.berserkir.gsmeac.R;
+import net.berserkir.gsmeac.database.helper.BriefHelper;
+import net.berserkir.gsmeac.database.model.Brief;
 
 public class BriefViewerActivity extends GSMEACActivity {
 

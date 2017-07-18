@@ -1,4 +1,4 @@
-package nz.org.cadetforces.gsmeac.activity;
+package net.berserkir.gsmeac.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,11 +13,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
-import nz.org.cadetforces.gsmeac.R;
-import nz.org.cadetforces.gsmeac.adapter.BriefsAdapter;
-import nz.org.cadetforces.gsmeac.database.helper.BriefHelper;
-import nz.org.cadetforces.gsmeac.database.model.Brief;
-import nz.org.cadetforces.gsmeac.util.comparator.MostRecentlyUpdatedBriefComparator;
+import net.berserkir.gsmeac.R;
+import net.berserkir.gsmeac.adapter.BriefsAdapter;
+import net.berserkir.gsmeac.database.helper.BriefHelper;
+import net.berserkir.gsmeac.database.model.Brief;
+import net.berserkir.gsmeac.util.comparator.MostRecentlyUpdatedBriefComparator;
 
 import java.util.Collections;
 import java.util.List;

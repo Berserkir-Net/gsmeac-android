@@ -1,4 +1,4 @@
-package nz.org.cadetforces.gsmeac.adapter.base;
+package net.berserkir.gsmeac.adapter.base;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;

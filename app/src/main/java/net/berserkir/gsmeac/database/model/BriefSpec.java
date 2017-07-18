@@ -1,4 +1,4 @@
-package nz.org.cadetforces.gsmeac.database.model;
+package net.berserkir.gsmeac.database.model;
 
 import com.yahoo.squidb.annotations.ColumnSpec;
 import com.yahoo.squidb.annotations.PrimaryKey;

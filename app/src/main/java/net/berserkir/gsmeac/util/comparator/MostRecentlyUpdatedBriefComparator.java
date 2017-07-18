@@ -1,6 +1,6 @@
-package nz.org.cadetforces.gsmeac.util.comparator;
+package net.berserkir.gsmeac.util.comparator;
 
-import nz.org.cadetforces.gsmeac.database.model.Brief;
+import net.berserkir.gsmeac.database.model.Brief;
 import org.apache.commons.lang3.builder.CompareToBuilder;
 
 import java.util.Comparator;

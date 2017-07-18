@@ -1,4 +1,4 @@
-package nz.org.cadetforces.gsmeac.activity;
+package net.berserkir.gsmeac.activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -19,9 +19,9 @@ import android.widget.ImageView;
 import android.widget.Toast;
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
-import nz.org.cadetforces.gsmeac.R;
-import nz.org.cadetforces.gsmeac.database.helper.BriefHelper;
-import nz.org.cadetforces.gsmeac.database.model.Brief;
+import net.berserkir.gsmeac.R;
+import net.berserkir.gsmeac.database.helper.BriefHelper;
+import net.berserkir.gsmeac.database.model.Brief;
 
 public class BriefEditorActivity extends GSMEACActivity implements TextWatcher {
 

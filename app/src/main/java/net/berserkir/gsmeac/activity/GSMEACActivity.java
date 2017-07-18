@@ -1,4 +1,4 @@
-package nz.org.cadetforces.gsmeac.activity;
+package net.berserkir.gsmeac.activity;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.MenuItem;
 import com.afollestad.materialdialogs.MaterialDialog;
-import nz.org.cadetforces.gsmeac.R;
+import net.berserkir.gsmeac.R;
 
 public class GSMEACActivity extends AppCompatActivity {
 

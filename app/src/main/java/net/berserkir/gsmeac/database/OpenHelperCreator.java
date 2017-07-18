@@ -1,4 +1,4 @@
-package nz.org.cadetforces.gsmeac.database;
+package net.berserkir.gsmeac.database;
 
 import com.yahoo.squidb.data.ISQLiteOpenHelper;
 import com.yahoo.squidb.data.SquidDatabase;
