@@ -8,11 +8,14 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
+import net.berserkir.gsmeac.GSMEACApplication;
 import net.berserkir.gsmeac.R;
 import net.berserkir.gsmeac.adapter.BriefsAdapter;
 import net.berserkir.gsmeac.database.helper.BriefHelper;
@@ -165,6 +168,38 @@ public class MainActivity extends GSMEACActivity {
         // show empty info text if no briefs exist in adapter
         mEmptyTextView.setVisibility(mBriefsAdapter.getItemCount() == 0 ? View.VISIBLE : View.GONE);
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // inflate menu
+        getMenuInflater().inflate(R.menu.activity_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch(item.getItemId()){
+
+            case R.id.action_about: {
+                displayAboutDialog();
+                return true;
+            }
+
+        }
+
+        return super.onOptionsItemSelected(item);
+
+    }
+
+    public void displayAboutDialog() {
+        MaterialDialog.Builder builder = new MaterialDialog.Builder(mContext);
+        builder.title(R.string.action_about);
+        builder.content(mContext.getString(R.string.info_about, GSMEACApplication.getVersion(), GSMEACApplication.getVersionCode()));
+        builder.positiveText(R.string.action_dismiss);
+        builder.autoDismiss(true);
+        showDialog(builder.build());
     }
 
 }
