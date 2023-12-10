@@ -16,7 +16,7 @@
     <string name="title_oops">Oops</string>
     <string name="title_confirm">Confirm</string>
 
-    <string name="info_about">GSMEAC v%1$s (%2$s)\nDeveloped by Liam Cottle\nwww.liamcottle.com</string>
+    <string name="info_about">GSMEAC v%1$s (%2$s)\nDevelopers:\n-Liam Cottle\n-Dyson Parkes</string>
     <string name="info_failed_to_save_brief">Failed to Save Brief</string>
     <string name="info_failed_to_delete_brief">Failed to Delete Brief</string>
     <string name="info_brief_saved">Brief Saved</string>
