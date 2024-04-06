@@ -65,7 +65,7 @@ public class BriefEditorActivity extends GSMEACActivity implements TextWatcher {
 
         // show confirm exit dialog if user has edited fields
         if(mHasEditedFields){
-
+            // todo: migrate to replacement for afollestad dialogs
             MaterialDialog.Builder builder = new MaterialDialog.Builder(mContext);
             builder.title(R.string.title_confirm);
             builder.content(R.string.info_exit_unsaved_changed);
