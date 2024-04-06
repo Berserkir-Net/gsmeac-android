@@ -156,39 +156,25 @@ public class BriefViewerActivity extends GSMEACActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        switch (item.getItemId()) {
+        int itemId = item.getItemId();
+        if (itemId == R.id.action_edit) {
+            startActivity(BriefEditorActivity.intentForBriefId(mContext, mBriefId));
+            return true;
+        } else if (itemId == R.id.action_share) {
+            // Need a way to get the briefing ID into this method somehow.
+            Intent shareIntent = new Intent(Intent.ACTION_SEND);
+            shareIntent.setType("text/plain");
+            shareIntent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.action_share_subject));
+            // Add Body of briefing - needs to be fleshed out.
+            //shareMessage(mContext, mBriefId);
 
-            case R.id.action_edit: {
-
-                // launch brief editor
-                startActivity(BriefEditorActivity.intentForBriefId(mContext, mBriefId));
-
-                return true;
-
-            }
-
-            case R.id.action_share: {
-
-                // Create Share Intent
-                Intent shareIntent = new Intent(Intent.ACTION_SEND);
-                // Set to plain text
-                shareIntent.setType("text/plain");
-                // Add Subject
-                shareIntent.putExtra(
-                        Intent.EXTRA_SUBJECT,getString(R.string.action_share_subject)
-                );
-                // Add Body of briefing - needs to be fleshed out.
-                shareIntent.putExtra(
-                        // In here, I need to add a way to build the briefing for sharing.
-                        // Reference the viewer format. Maybe switch type to html or RTF.
-                        Intent.EXTRA_TEXT,getString(R.string.action_share_message)
-                );
-                // Actually share
-                startActivity(Intent.createChooser(shareIntent, getString(R.string.action_share_choice)));
-                return true;
-
-            }
-
+            shareIntent.putExtra(
+                Intent.EXTRA_TEXT, getString(R.string.action_share_message)
+                // In here, I need to add a way to build the briefing for sharing.
+                // Reference the viewer format. Maybe switch type to html or RTF if wanting 'pretty'.
+            );
+            startActivity(Intent.createChooser(shareIntent, getString(R.string.action_share_choice)));
+            return true;
         }
 
         return super.onOptionsItemSelected(item);
