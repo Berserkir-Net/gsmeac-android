@@ -252,17 +252,10 @@ public class BriefEditorActivity extends GSMEACActivity implements TextWatcher {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        switch(item.getItemId()){
+        if (item.getItemId() == R.id.action_save) {// save brief when save button is clicked in menu
+            save();
 
-            case R.id.action_save: {
-
-                // save brief when save button is clicked in menu
-                save();
-
-                return true;
-
-            }
-
+            return true;
         }
 
         return super.onOptionsItemSelected(item);
