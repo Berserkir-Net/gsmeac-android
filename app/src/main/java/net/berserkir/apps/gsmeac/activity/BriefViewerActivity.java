@@ -167,6 +167,28 @@ public class BriefViewerActivity extends GSMEACActivity {
 
             }
 
+            case R.id.action_share: {
+
+                // Create Share Intent
+                Intent shareIntent = new Intent(Intent.ACTION_SEND);
+                // Set to plain text
+                shareIntent.setType("text/plain");
+                // Add Subject
+                shareIntent.putExtra(
+                        Intent.EXTRA_SUBJECT,getString(R.string.action_share_subject)
+                );
+                // Add Body of briefing - needs to be fleshed out.
+                shareIntent.putExtra(
+                        // In here, I need to add a way to build the briefing for sharing.
+                        // Reference the viewer format.
+                        Intent.EXTRA_TEXT,getString(R.string.action_share_message)
+                );
+                // Actually share
+                startActivity(Intent.createChooser(shareIntent, getString(R.string.action_share_choice)));
+                return true;
+
+            }
+
         }
 
         return super.onOptionsItemSelected(item);
