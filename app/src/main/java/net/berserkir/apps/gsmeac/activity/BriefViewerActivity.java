@@ -180,7 +180,7 @@ public class BriefViewerActivity extends GSMEACActivity {
                 // Add Body of briefing - needs to be fleshed out.
                 shareIntent.putExtra(
                         // In here, I need to add a way to build the briefing for sharing.
-                        // Reference the viewer format.
+                        // Reference the viewer format. Maybe switch type to html or RTF.
                         Intent.EXTRA_TEXT,getString(R.string.action_share_message)
                 );
                 // Actually share
