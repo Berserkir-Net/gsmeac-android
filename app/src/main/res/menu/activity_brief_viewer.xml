@@ -3,9 +3,17 @@
       xmlns:tools="http://schemas.android.com/tools"
       tools:context=".activity.BriefViewerActivity">
 
-    <item android:id="@+id/action_edit"
-          android:title="@string/action_edit"
-          android:icon="@drawable/ic_pencil_white_24dp"
-          app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="@string/action_share"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_edit"
+        android:title="@string/action_edit"
+        android:icon="@drawable/ic_pencil_white_24dp"
+        app:showAsAction="always"/>
 
 </menu>
