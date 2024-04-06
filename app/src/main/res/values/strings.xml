@@ -12,6 +12,10 @@
     <string name="action_cancel">Cancel</string>
     <string name="action_delete">Delete</string>
     <string name="action_edit">Edit</string>
+    <string name="action_share">Share</string>
+    <string name="action_share_message">Take a look at this briefing</string>
+    <string name="action_share_subject">There\'s a briefing here</string>
+    <string name="action_share_choice">Share using</string>
 
     <string name="title_oops">Oops</string>
     <string name="title_confirm">Confirm</string>
@@ -80,5 +84,4 @@
         <li>Command channels.</li>
         <li>Communication channels.</li>
         </ul>]]></string>
-
 </resources>
